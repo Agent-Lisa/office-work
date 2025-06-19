@@ -1,0 +1,41 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>office work website</title>
+    <style>
+        body {
+            background-color: #32cd32; /* green background */
+            font-family: arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #006400; /* dark green heading */
+            text-align: center;
+        }
+        p {
+            color: #333;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>office work website</h1>
+        <p>welcome to our office work website. this website is designed to provide information about our office work and services.</p>
+    </div>
+    <script>
+        // add any javascript code here
+    </script>
+</body>
+</html>
