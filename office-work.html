@@ -1,0 +1,98 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>office work</title>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+        .nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            color: #ccc;
+        }
+        .content {
+            padding: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>office work</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>welcome to office work</h2>
+            <p>this is a simple web page for office work.</p>
+            <form>
+                <label for="name">name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 office work</p>
+        </div>
+    </div>
+    <script>
+        const form = document.queryselector('form');
+        form.addeventlistener('submit', (e) => {
+            e.preventdefault();
+            const name = document.queryselector('#name').value;
+            const email = document.queryselector('#email').value;
+            console.log(`name: ${name}, email: ${email}`);
+        });
+    </script>
+</body>
+</html>
